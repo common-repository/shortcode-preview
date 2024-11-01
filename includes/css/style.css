@@ -1,0 +1,139 @@
+.shortcode-preview-modal {
+	display: none;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 32px;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #000;
+	background-color: rgba(0, 0, 0, .4)
+}
+
+.shortcode-preview-header {
+	background: #f7f7f7;
+	padding: 10px 0;
+	display: flex
+}
+
+.loader,
+.shortcode-preview-btn-wrap {
+	display: none
+}
+
+.shortcode-preview-modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: calc(100% - 40px)
+}
+
+#shortcode-preview-close {
+	color: #fefefe;
+	float: right;
+	font-size: 28px;
+	font-weight: 700;
+	height: 50px;
+	background: #FF5722;
+	width: 50px;
+	text-align: center;
+	line-height: 46px
+}
+
+#shortcode-preview-close:hover {
+	background: #e7643b
+}
+
+form#shortcode-preview-submit {
+	float: left;
+	margin-right: 10px
+}
+
+#shortcode-preview-delete-all,
+#shortcode-preview-delete {
+	background: #f44;
+	border-color: #f95e5e #f44 #f92121;
+	box-shadow: 0 1px 0 #c31515;
+	text-shadow: 0 -1px 1px #f44, 1px 0 1px #f44, 0 1px 1px #f44, -1px 0 1px #f44
+}
+
+.loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #3498db;
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+	margin: 20px auto
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0)
+	}
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+
+
+.shortcode-preview-widefat,
+select#shortcode-preview-type {
+	text-transform: capitalize
+}
+li.shortcode-previev a,
+li.shortcode-previev a:active,
+li.shortcode-previev a:focus,
+li.shortcode-previev a:hover {
+  color: #fdd835!important;
+  text-transform: uppercase!important;
+}
+
+.shortcode-preview-widefat {
+	border-spacing: 0;
+	width: 100%;
+	clear: both;
+	margin: 0;
+	display: block
+}
+
+.shortcode-previev-admin-block {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px 10px 10px 0;
+}
+.shortcode-previev-admin-main-right .shortcode-previev-admin-block {
+    background: #fdd835;
+    border: 1px solid #fdd835;
+}
+.shortcode-previev-admin-main-right .shortcode-previev-admin-block img {
+    display: block;
+    margin-top: 20px;
+}
+@media (min-width: 961px) {
+  .shortcode-previev-admin-main-left {
+      float: left;
+      width: 70%;
+      display: block !important;
+  }
+  .shortcode-previev-admin-main-right {
+      float: right;
+      width: 30%;
+      display: block !important;
+  }
+}
+@media (max-width: 960px) {
+  .shortcode-previev-admin-main-left {
+      float: left;
+      width: 100%;
+      display: block !important;
+  }
+  .shortcode-previev-admin-main-right {
+      width: 0%;
+      display: none !important;
+  }
+}
